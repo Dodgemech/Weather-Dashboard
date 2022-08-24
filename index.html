@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body class="text-center p-3 mb-2 text-dark bg-opacity-75 rounded-3">
+    <header class=" p-3 mb-2 text-dark rounded-3">
+        <div>
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <main class="container-fluid ">
+        <div class="row">
+            <div class="col-3 d-flex flex-column p-4 mx-left">
+                <div class="border-bottom border-info border-5 mb-3">
+                    <h2>Search For a City</h2>
+
+                    <form id="city-search">
+                        <div class="mb-3">
+                            <input id="city" type="text" autofocus="true" class="form-control form-control-lg" />
+                        </div>
+                    </form>
+                    <div class="d-grid gap-5 mb-3 col-12 mx-auto">
+                        <button class="btn btn-outline-dark btn-info btn-secondary" type="submit" id="search">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span>
+            <div class="past-search" id="past-search"></div>
+        </span>
+        <div class="col-3 d-flex flex-column p-4 mx-left">
+            <div id="weather-container" class="d-grid gap-3 mb-3">
+                <div id="current-weather" class="text-center">
+                    <h2 id="weather-title"></h2>
+                    <div id="current-data">
+                        <p class="mt-4" id="weather-temp"></p>
+                        <p class="mt-4" id="weather-wind"></p>
+                        <p class="mt-4" id="weather-humidity"></p>
+                        <div id="uv-index">
+                            <p class="mt-4" id="weather-uvi"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="five-day" class="mt-4">
+                <h3 id="forecast-title"></h3>
+                <div class="row justify-content-between" id="forecast"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center">
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.3/dayjs.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
