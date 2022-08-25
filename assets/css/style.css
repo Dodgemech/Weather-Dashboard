@@ -1,0 +1,16 @@
+header{
+    background-color:skyblue;
+    opacity: 80%;
+}
+
+.uvi-good{
+    color: green;
+}
+
+.uvi-bad{
+    color: yellow;
+}
+
+.uvi-ugly{
+    color: red;
+}
